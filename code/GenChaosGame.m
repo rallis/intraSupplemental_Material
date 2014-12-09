@@ -36,7 +36,7 @@ pts=Transpose[helpfunc1/@Transpose[shifts]];
 pts=Drop[pts,k];
 arraypts=Transpose[{helpfunc2[Transpose[pts][[2]]],helpfunc3[Transpose[pts][[1]]]}];
 Map[setgrayscale[{#[[1]],#[[2]]}]&,arraypts];
-Return[{Length[pts]-1,resimg}];
+Return[{Length[pts],resimg}];
 ];
 
 
